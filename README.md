@@ -40,13 +40,13 @@ The proposed system employs a comprehensive pipeline integrating point cloud pro
 
 <div align="center">
   <img src=Picture5.png" width="80%" title="workflow"><br>
-  <strong>Figure 4.</strong> Workflow of muti-object tracking framework.
+  <strong>Figure 5.</strong> Workflow of muti-object tracking framework.
 </div>
 <br><br>
 
 <div align="center">
   <img src=Picture6.png" width="80%" title="workflow"><br>
-  <strong>Figure 4.</strong> The visualization of the construction site in RViz.
+  <strong>Figure 6.</strong> The visualization of the construction site in RViz.
 </div>
 <br><br>
 
