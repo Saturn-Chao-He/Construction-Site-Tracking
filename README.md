@@ -13,7 +13,7 @@ This is the official demo for [[Paper]](https://www.mdpi.com/), only includes a 
 The proposed system employs a comprehensive pipeline integrating point cloud pro-cessing, 3D object detection with algorithmic background filtering, and multi-object tracking with Kalman filter-based velocity estimation.
 
 <div align="center">
-  <img src="Picture1.png" width="80%" title="workflow"><br>
+  <img src="Picture2.png" width="80%" title="workflow"><br>
   <strong>Figure 1.</strong> Complete system workflow.
 </div>
 <br><br>
