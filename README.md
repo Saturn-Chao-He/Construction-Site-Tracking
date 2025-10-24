@@ -2,7 +2,7 @@
 
 ## LiDAR-based Monitoring System for Construction Site: A Non-machine-learning Approach
 
-#### [[Paper]](https://) | [[Video]](https://)
+#### [[Paper]](https://) | [[Video]](https://www.youtube.com/watch?v=MQzc5nLDXIo)
 
 [[Chao He]](https://scholar.google.com/citations?user=g4Yv3BkAAAAJ&hl=en) and [[Da Hu]](https://scholar.google.com/citations?user=Y7_j-GMAAAAJ&hl=en&oi=ao) 
 
