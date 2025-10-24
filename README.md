@@ -1,122 +1,98 @@
 # Construction-Site-Tracking
-Construction Site Tracking
 
-## Social Media Analytics for Disaster Response: Classification and Geospatial Visualization Framework
+## LiDAR-based Monitoring System for Construction Site: A Non-machine-learning Approach
 
-#### [[Paper]](https://www.mdpi.com/2076-3417/15/8/4330) | [[Video]](https://youtu.be/gU3no4x2rHs)
+#### [[Paper]](https://) | [[Video]](https://)
 
-Chao He and [[Da Hu]](https://scholar.google.com/citations?user=Y7_j-GMAAAAJ&hl=en&oi=ao) 
+[[Chao He]] (https://scholar.google.com/citations?user=g4Yv3BkAAAAJ&hl=en) and [[Da Hu]](https://scholar.google.com/citations?user=Y7_j-GMAAAAJ&hl=en&oi=ao) 
 
 Kennesaw State University
 
-This is the official demo code for [[Paper]](https://www.mdpi.com/2076-3417/15/8/4330). 
+This is the official demo for [[Paper]](https://www.mdpi.com/), only includes a part of our data and code. 
 
-We develop a disaster response system that can read social media data and do post classification, then visualize the info on map.
+The proposed system employs a comprehensive pipeline integrating point cloud pro-cessing, 3D object detection with algorithmic background filtering, and multi-object tracking with Kalman filter-based velocity estimation.
 
 <div align="center">
-  <img src="1.png" width="80%" title="workflow"><br>
-  <strong>Figure 1.</strong> Model training and deployment pipelines.
+  <img src="Picture1.png" width="80%" title="workflow"><br>
+  <strong>Figure 1.</strong> Complete system workflow.
 </div>
 <br><br>
 
 
 <div align="center">
-  <img src="2.png" width="80%" title="workflow"><br>
-  <strong>Figure 2.</strong> Markers with corresponding classifications.
+  <img src="Picture2.png" width="80%" title="workflow"><br>
+  <strong>Figure 2.</strong> The setup of the experimental monitoring system.
 </div>
 <br><br>
 
 
 <div align="center">
-  <img src="3.png" width="80%" title="workflow"><br>
-  <strong>Figure 3.</strong> The architecture and implementation of the proposed website server.
+  <img src="Picture3.png" width="80%" title="workflow"><br>
+  <strong>Figure 3.</strong> Background filtering of point cloud frame.
 </div>
 <br><br>
 
 <div align="center">
-  <img src="4.png" width="80%" title="workflow"><br>
-  <strong>Figure 4.</strong> Social media information visualization of Hurricane Harvey on map (usernames are excluded from the pop-up windows for privacy considerations).
+  <img src=Picture4.png" width="80%" title="workflow"><br>
+  <strong>Figure 4.</strong> Visualization of object detection. (green: worker, red: construction vehicle).
+</div>
+<br><br>
+
+<div align="center">
+  <img src=Picture5.png" width="80%" title="workflow"><br>
+  <strong>Figure 4.</strong> Workflow of muti-object tracking framework.
+</div>
+<br><br>
+
+<div align="center">
+  <img src=Picture6.png" width="80%" title="workflow"><br>
+  <strong>Figure 4.</strong> The visualization of the construction site in RViz.
 </div>
 <br><br>
 
 
-## 1. Download Dataset
+## 1. Dataset
 **Dataset** : 
-[[HumAID]](https://crisisnlp.qcri.org/humaid_dataset)
+[[bin]](https://github.com/Saturn-Chao-He/Construction-Site-Tracking/tree/main/bin)
 
-Alam, F.; Qazi, U.; Imran, M. HumAID: Human-Annotated Disaster Incidents Data from Twitter with Deep Learning Benchmarks. ICWSM 2021, 15, 933–942, doi:10.1609/icwsm.v15i1.18116.
-
-## 2. Model Training
+## 2. Environment (Ubuntu 20.04, ROS1 Noetic)
 
 Create Python environment and install the required packages:
 ```bash
-conda create --name ModernBert python==3.9
-conda activate ModernBert
-
-#python == 3.9
-pip install "torch==2.4.1" tensorboard
-pip install flash-attn "setuptools<71.0.0" scikit-learn 
-pip install  --upgrade \
-   "datasets==3.1.0" \
-   "accelerate==1.2.1" \
-   "hf-transfer==0.1.8"
-pip install "git+https://github.com/huggingface/transformers.git@6e0515e99c39444caae39472ee1b2fd76ece32f1" --upgrade
-pip install nltk
-pip install ipywidgets --upgrade
-pip install --upgrade transformers
+conda env create -f track.yaml
+conda activate track
 
 ```
 
-Our Trained Model
-**Our trained Model is uploaded to Huggingface** : 
-[[Huggingface]](https://huggingface.co/)
-
-Run the training script in the folder train:
+## 3. Ternimal 1
+Run
 ```bash
-# download the dataset to data/
-# save the best model to best_model/ 
-run *.ipynb
-
+export DISABLE_ROS1_EOL_WARNINGS=1
+source /opt/ros/noetic/setup.bash
+roscore
 ```
 
-## 3. Model Deployment and Visualization on Map
-
-
-You can deploy it using [[Nginx]](https://nginx.org/)
+## 4. Ternimal 2
+Run
 ```bash
-# Deploy a cloud server and get a public IP address
-# then install nginx
-sudo apt update
-sudo apt install nginx -y
-sudo systemctl start nginx
-sudo systemctl enable nginx
-sudo systemctl status nginx
-
-# Allow Nginx through firewall (if ufw is enabled)
-sudo ufw allow 'Nginx Full'
-
-# run the script for reasoning
-python pridict.py
-
-Open browser and visit https://your-public-ip-address
+rviz -d tracking.rviz -f velodyne
 ```
 
-You can test it using python http server
+## 5. VSCode
+Run
 ```bash
-# run http server
-python -m http.server 8000
-
-# run the script for reasoning
-python pridict.py
-
-Open browser and visit https://localhost:8000
+# conda env: track
+export DISABLE_ROS1_EOL_WARNINGS=1
+source /opt/ros/noetic/setup.bash
+python speed.py
 ```
+
 
 
 ## Acknowledgement
-Great thanks to the [[HumAID]](https://crisisnlp.qcri.org/humaid_dataset), as the dataset is used in our research.
+Great thanks to the Q building of Kennesaw State University.
 
 ## Cite
 If this project is useful in your research, please cite:
-> He, C., & Hu, D. (2025). Social Media Analytics for Disaster Response: Classification and Geospatial Visualization Framework. Applied Sciences, 15(8), 4330. https://doi.org/10.3390/app15084330
+> He, C., & Hu, D. (2025). LiDAR-based Monitoring System for Construction Site: A Non-machine-learning Approach.
 
