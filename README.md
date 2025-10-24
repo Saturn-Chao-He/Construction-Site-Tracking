@@ -4,7 +4,7 @@
 
 #### [[Paper]](https://) | [[Video]](https://)
 
-[[Chao He]] (https://scholar.google.com/citations?user=g4Yv3BkAAAAJ&hl=en) and [[Da Hu]](https://scholar.google.com/citations?user=Y7_j-GMAAAAJ&hl=en&oi=ao) 
+[[Chao He]](https://scholar.google.com/citations?user=g4Yv3BkAAAAJ&hl=en) and [[Da Hu]](https://scholar.google.com/citations?user=Y7_j-GMAAAAJ&hl=en&oi=ao) 
 
 Kennesaw State University
 
@@ -55,7 +55,7 @@ The proposed system employs a comprehensive pipeline integrating point cloud pro
 **Dataset** : 
 [[bin]](https://github.com/Saturn-Chao-He/Construction-Site-Tracking/tree/main/bin)
 
-## 2. Environment (Ubuntu 20.04, ROS1 Noetic)
+## 2. Environment (Ubuntu 20.04, ROS 1 Noetic)
 
 Create Python environment and install the required packages:
 ```bash
