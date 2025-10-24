@@ -1,4 +1,4 @@
-# Construction-Site-Tracking
+# Construction Site Tracking
 
 ## LiDAR-based Monitoring System for Construction Site: A Non-machine-learning Approach
 
