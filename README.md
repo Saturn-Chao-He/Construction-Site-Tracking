@@ -1,6 +1,6 @@
 # Construction Site Tracking
 
-## LiDAR-based Monitoring System for Construction Site: A Non-machine-learning Approach
+## A LiDAR-Driven Framework for Real-Time Monitoring and Speed Tracking on Construction Sites
 
 #### [[Paper]](https://) | [[Video]](https://youtu.be/emnjLdqLXyo)
 
