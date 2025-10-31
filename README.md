@@ -8,7 +8,7 @@
 
 Kennesaw State University
 
-This is the official demo for [[Paper]](https://www.mdpi.com/), only includes a part of our data and code. 
+This is the official demo for [[Paper]](https://), only includes a part of our data and code. 
 
 The proposed system employs a comprehensive pipeline integrating point cloud pro-cessing, 3D object detection with algorithmic background filtering, and multi-object tracking with Kalman filter-based velocity estimation.
 
@@ -94,5 +94,5 @@ Great thanks to the Q building of Kennesaw State University.
 
 ## Cite
 If this project is useful in your research, please cite:
-> He, C., & Hu, D. (2025). LiDAR-based Monitoring System for Construction Site: A Non-machine-learning Approach.
+> He, C., & Hu, D. (2025). A LiDAR-Driven Framework for Real-Time Monitoring and Speed Tracking on Construction Sites.
 
