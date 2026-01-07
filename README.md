@@ -8,7 +8,7 @@
 
 Kennesaw State University
 
-This is the official demo for [[Paper]](https://), only includes a part of our data and code. 
+This is the project page for [[Paper]](https://)
 
 The proposed system employs a comprehensive pipeline integrating point cloud pro-cessing, 3D object detection with algorithmic background filtering, and multi-object tracking with Kalman filter-based velocity estimation.
 
