@@ -96,23 +96,23 @@ Great thanks to the Q building of Kennesaw State University.
 If this project is useful in your research, please cite:
 
 @ARTICLE{11520460,
+
+author={He, Chao and Hu, Da},
   
-  author={He, Chao and Hu, Da},
+journal={IEEE Sensors Journal}, 
   
-  journal={IEEE Sensors Journal}, 
+title={A LiDAR-Driven Framework for Monitoring and Speed Tracking on Construction Sites}, 
   
-  title={A LiDAR-Driven Framework for Monitoring and Speed Tracking on Construction Sites}, 
-  
-  year={2026},
+year={2026},
  
-  volume={26},
+volume={26},
   
-  number={12},
+number={12},
  
-  pages={19092-19107},
+pages={19092-19107},
   
-  keywords={Construction;Tracking;Modeling;Monitoring;Signal detection;Kalman filters;Measurement;Object tracking;Visualization;Timing;3-D object detection;construction site monitoring;light detection and ranging (LiDAR) sensing;speed estimation;tracking},
+keywords={Construction;Tracking;Modeling;Monitoring;Signal detection;Kalman filters;Measurement;Object tracking;Visualization;Timing;3-D object detection;construction site monitoring;light detection and ranging (LiDAR) sensing;speed estimation;tracking},
   
-  doi={10.1109/JSEN.2026.3691008}}
+doi={10.1109/JSEN.2026.3691008}}
 
 
