@@ -2,13 +2,13 @@
 
 ## A LiDAR-Driven Framework for Real-Time Monitoring and Speed Tracking on Construction Sites
 
-#### [[Paper]](https://) | [[Video]](https://youtu.be/emnjLdqLXyo)
+#### [[Paper]](https://ieeexplore.ieee.org/abstract/document/11520460) | [[Video]](https://youtu.be/emnjLdqLXyo)
 
 [[Chao He]](https://scholar.google.com/citations?user=g4Yv3BkAAAAJ&hl=en) and [[Da Hu]](https://scholar.google.com/citations?user=Y7_j-GMAAAAJ&hl=en&oi=ao) 
 
 Kennesaw State University
 
-This is the project page for [[Paper]](https://)
+This is the project page for [[Paper]](https://ieeexplore.ieee.org/abstract/document/11520460)
 
 The proposed system employs a comprehensive pipeline integrating point cloud pro-cessing, 3D object detection with algorithmic background filtering, and multi-object tracking with Kalman filter-based velocity estimation.
 
@@ -94,5 +94,15 @@ Great thanks to the Q building of Kennesaw State University.
 
 ## Cite
 If this project is useful in your research, please cite:
-> He, C., & Hu, D. (2025). A LiDAR-Driven Framework for Real-Time Monitoring and Speed Tracking on Construction Sites.
+@ARTICLE{11520460,
+  author={He, Chao and Hu, Da},
+  journal={IEEE Sensors Journal}, 
+  title={A LiDAR-Driven Framework for Monitoring and Speed Tracking on Construction Sites}, 
+  year={2026},
+  volume={26},
+  number={12},
+  pages={19092-19107},
+  keywords={Construction;Tracking;Modeling;Monitoring;Signal detection;Kalman filters;Measurement;Object tracking;Visualization;Timing;3-D object detection;construction site monitoring;light detection and ranging (LiDAR) sensing;speed estimation;tracking},
+  doi={10.1109/JSEN.2026.3691008}}
+
 
