@@ -94,6 +94,7 @@ Great thanks to the Q building of Kennesaw State University.
 
 ## Cite
 If this project is useful in your research, please cite:
+
 @ARTICLE{11520460,
   author={He, Chao and Hu, Da},
   journal={IEEE Sensors Journal}, 
